@@ -35,7 +35,7 @@ Apply the migration files of the created app to the database
 Execute Django admin using localhost and create details for 10 entries
 
 ## PROGRAM
-'''
+```
 admin.py
 from django.contrib import admin
 from .models import customer_DB,customer_DBAdmin
@@ -54,7 +54,7 @@ class customer_DB(models.Model):
     email=models.CharField(max_length=30)
 class customer_DBAdmin(admin.ModelAdmin):
     list_display=["Name","phone_num","vechile_number","vechicle_model","service_mode","bill_no","email"]
-'''
+```
 
 ## OUTPUT
 ![alt text](<Screenshot (8).png>)
